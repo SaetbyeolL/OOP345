@@ -1,3 +1,3 @@
 # OOP345
 - C++ intensive course
-- C++ Assignment
+- List of C++ Assignment each week
