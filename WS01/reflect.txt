@@ -1,0 +1,32 @@
+//**********************************************************************
+//Workshop : #1 (P2)
+//Full Name : Saetbyeol Lim
+//Student ID# : 149814212
+//Email : slim62@myseneca.ca
+//Date : 18/9/2022 
+//Comment :
+//I have done all the coding by myself and only copied the code 
+//that my professor provided to complete my workshops and assignments.
+//**********************************************************************
+Since 'a car brand in the form of a C-style null-terminated string of any length' was requested 
+in Workshop part2, I used rule-of-3 to implement dynamic allocated memory 
+to the 'm_brand' variable and manage resources consistently. 
+We cannot know the length of 'm_brand' variable until the compiler reads it. 
+So,  in part1, I was asked to set to 10 for the size of memory for m_brand. 
+But, in part2, the length of m_brand is dynamically allocated, 
+memory is allocated according to the size of each m_brand, 
+so memory waste can be reduced. When the object disappears, 
+deconstructure is called by the compiler to initialize it and finish.
+The most difficult part was using static variables. When I learned it in class, I understood it, 
+but when I tried to apply it to the code, I did not understand the concept well, 
+so I googled and debugging to find out where to place the declared static variable. 
+Static variable declare and initialize once a time during the life time off that program 
+as long as it's running. 
+
+ ex) COUNTER
+	void Cars::display(bool reset) const { 
+		static int COUNTER = 0; <-- Skip after declare and initialize
+		if (reset == true) {
+			COUNTER = 0;
+		}
+		COUNTER++;
