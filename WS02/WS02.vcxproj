@@ -128,13 +128,15 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="TennisLog.cpp" />
-    <ClCompile Include="w2_p1.cpp" />
+    <ClCompile Include="Timer.cpp" />
+    <ClCompile Include="w2_p2.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="tennis-data.csv" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="TennisLog.h" />
+    <ClInclude Include="Timer.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

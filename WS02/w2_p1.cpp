@@ -8,13 +8,13 @@
 #include "TennisLog.h"
 #include "TennisLog.h"
 
-void printDivider(size_t cnt){
+void printDivider(size_t cnt) {
     for (auto i = 0u; i < cnt; ++i)
         std::cout << "*";
     std::cout << std::endl;
 }
 
-void printHeader(const char* head){
+void printHeader(const char* head) {
     std::cout << std::endl;
     printDivider(53);
     std::cout << head << std::endl;
@@ -23,7 +23,7 @@ void printHeader(const char* head){
 
 
 // ws tennis-data.csv
-int main(int argc, char** argv)
+int main(int argc, char** argv)//** double pointer
 {
     std::cout << "Command Line:\n";
     for (int i = 0; i < argc; i++)
@@ -39,7 +39,7 @@ int main(int argc, char** argv)
 
     printHeader("Empty Tennis Log entries");
 
-    sdds::TennisLog tlog1;
+    sdds::TennisLog tlog1;//* 여기는 초기화
 
     std::cout << tlog1[0] << std::endl;
     std::cout << tlog1[1000] << std::endl;
@@ -49,8 +49,8 @@ int main(int argc, char** argv)
 
 
     printHeader("Non Empty Tennis Log entries");
-    
-    sdds::TennisLog tlog2(argv[1]);
+
+    sdds::TennisLog tlog2(argv[1]);//* 여기는 읽어주는 단계
 
     std::cout << tlog2[0] << std::endl;
     std::cout << tlog2[1000] << std::endl;
@@ -60,10 +60,10 @@ int main(int argc, char** argv)
 
 
     printHeader("Add to Empty Tennis Log");
-    sdds::TennisMatch t1{"2022-120", "Wimbeldon", 12, "Player 1", "Player 2"};
-    sdds::TennisMatch t2{"2022-121", "US Open", 1, "Player 3", "Player 4"};
-    sdds::TennisMatch t3{"2022-122", "Davis Cup", 7, "Player 5", "Player 6"};
-    sdds::TennisMatch t4{"2022-123", "New Year Cup", 4, "Player 7", "Player 8"};
+    sdds::TennisMatch t1{ "2022-120", "Wimbeldon", 12, "Player 1", "Player 2" };
+    sdds::TennisMatch t2{ "2022-121", "US Open", 1, "Player 3", "Player 4" };
+    sdds::TennisMatch t3{ "2022-122", "Davis Cup", 7, "Player 5", "Player 6" };
+    sdds::TennisMatch t4{ "2022-123", "New Year Cup", 4, "Player 7", "Player 8" };
     tlog1.addMatch(t1);
     tlog1.addMatch(t2);
     tlog1.addMatch(t3);
