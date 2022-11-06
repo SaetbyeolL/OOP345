@@ -1,0 +1,33 @@
+REFLECT
+//**********************************************************************
+//Workshop : #3 (P2)
+//Full Name : Saetbyeol Lim
+//Student ID# : 149814212
+//Email : slim62@myseneca.ca
+//Date : 2/Oct/2022 
+//Comment :
+//I have done all the coding by myself and only copied the code 
+//that my professor provided to complete my workshops and assignments.
+//**********************************************************************
+- the reason for specializing the push() member function.
+For double type, it was specialized to define the same value if the absolute value 
+of the difference between the two numbers is within 0.005.
+
+-the reason for defining the class variable outside the class definition.
+	template<typename T, size_t CAPACITY>
+	T Queue<T, CAPACITY>::notInQueue{};
+	template<>
+	Dictionary Queue<Dictionary, 100u>::notInQueue{
+		"Empty Term", "Empty Substitute" };
+The reason for declaring a class variable inside the class and defining it outside is that it has to be defined 
+and initialized only once during program execution. Since all instances should share this class variable, 
+it must be done outside. It is like a global variable. Static declares a variable in header file and  define 
+and initialize the class variable in the implementation file for the module. But, in the case of a template, 
+it is written in the header file together. 
+
+- answers to the other questions in these specifications.
+When submitting to the matrix, the result of "UniqueQueue size: [6]" came out as "UniqueQueue size: [7]", 
+so it took a long time to solve it. In order to solve the problem, it was possible to solve the problem 
+by adding 'virtual' to the push function in Queue.h. Also, it took a long time to write the logic of the pop 
+and push functions.
+
