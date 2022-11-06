@@ -1,0 +1,21 @@
+//**********************************************************************
+//Workshop : #4 (P2)
+//Full Name : Saetbyeol Lim
+//Student ID# : 149814212
+//Email : slim62@myseneca.ca
+//Date : 9/Oct/2022 
+//Comment :
+//I have done all the coding by myself and only copied the code 
+//that my professor provided to complete my workshops and assignments.
+//**********************************************************************
+the difference between the implementations of a composition and an aggregation is 
+whether it manages the creation or destruction. Restaurant module is related to composition. 
+ConfirmSender module is related to aggregation.  In aggregation, Parts can be a part of multiple objects at once, 
+and all object is irresponsible for the existence and lifespan of the parts. When an aggregation is created, 
+the aggregation is not responsible for creating the parts. When an aggregation is destroyed, 
+the aggregation is not responsible for destroying the parts. 
+The copy of reservations is in the restaurant module. However, 
+ConfirmationSender just includes the address of each Reservation as a constant. 
+It cannot change the values. Because aggregations do not handle deallocation of their parts, 
+they have the potential to be more dangerous even if they can be beneficial. Because of this, 
+compositions have to be preferred to aggregations.
