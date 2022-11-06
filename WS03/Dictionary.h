@@ -13,7 +13,7 @@
 #ifndef SDDS_DICTIONARY_H
 #define SDDS_DICTIONARY_H
 #include <string>
-#include <iostream>
+#include <iostream> 
 namespace sdds {
 	class Dictionary {
 		std::string m_term{};
