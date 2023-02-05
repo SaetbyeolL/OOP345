@@ -1,0 +1,29 @@
+//**********************************************************************
+//Workshop : #8 (P2)
+//Full Name : Saetbyeol Lim
+//Student ID# : 149814212
+//Email : slim62@myseneca.ca
+//Date : 11/20/2022 
+//Comment :
+//I have done all the coding by myself and only copied the code 
+//that my professor provided to complete my workshops and assignments.
+//**********************************************************************
+The advantages that smart pointer syntax provides is the actual object is removed. When utilising a raw pointer,  
+we must delete all possible exit point, and an exception will still cause a memory leak. 
+When an exception occurs, smart pointers clean the memory as well.
+The difference between raw and smart pointer syntax is that Smart pointers keep track of the owners of a resource 
+and deallocate it automatically when the last owner exits scope. However, in the case of a raw pointer, 
+we must directly deallocate dynamic allocation.
+
+In my solution, smart pointer is applied to 'writeSmart' function. 
+In case of writeRaw function, I had to delete object(rPtr) since it is dynamically allocated. 
+However, we can easily delete memory using smart pointer in writeSmart function. 
+Once lifetime of smart pointer expire, it remove object automatically. 
+
+				if (emp[i].id == sal[j].id) {
+					smartPtr = make_unique<EmployeeWage>(emp[i].name, sal[j].salary);
+					smartPtr->rangeValidator();
+					if (emp.luhnAlgorithm(emp[i].id)) {
+						activeEmp += move(smartPtr);
+					}
+				}
