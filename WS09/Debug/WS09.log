@@ -1,0 +1,7 @@
+﻿  TreasureMap.cpp
+C:\Users\saetb\source\OOP345\OOP345\WS09\TreasureMap.cpp(111,23): error C2059: syntax error: 'if'
+C:\Users\saetb\source\OOP345\OOP345\WS09\TreasureMap.cpp(113,11): error C2059: syntax error: '.'
+C:\Users\saetb\source\OOP345\OOP345\WS09\TreasureMap.cpp(114,11): error C2059: syntax error: '.'
+C:\Users\saetb\source\OOP345\OOP345\WS09\TreasureMap.cpp(120,13): error C2065: 'is': undeclared identifier
+  w9.cpp
+  Generating Code...

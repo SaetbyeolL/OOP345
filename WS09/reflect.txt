@@ -1,0 +1,22 @@
+//**********************************************************************
+//Workshop : #9 (P2)
+//Full Name : Saetbyeol Lim
+//Student ID# : 149814212
+//Email : slim62@myseneca.ca
+//Date : 11/25/2022 
+//Comment :
+//I have done all the coding by myself and only copied the code 
+//that my professor provided to complete my workshops and assignments.
+//**********************************************************************
+By binding function to arguments in this workshop, Binding a function with placeholders allows you 
+to adjust the position and quantity of values that the function will utilise, 
+as well as modify the function based on the desired output. 
+auto f = bind(digForTreasure, placeholders::_1, mark);
+
+The advantages of multiple threads are 
+(1) It enhances performance by decreased development time.
+(2) It Simplify and streamline program coding.
+(3) It better use of CPU resource.
+(4) It parallelize occurrence of tasks simultaneous.
+In this workshop, I used 4threads to encode single file. 
+This can make process the encoding simultaneously in multi-core CPU.
