@@ -1,0 +1,33 @@
+//**********************************************************************
+//Workshop : #7 (P2)
+//Full Name : Saetbyeol Lim
+//Student ID# : 149814212
+//Email : slim62@myseneca.ca
+//Date : 11/Nov/2022 
+//Comment : OOP345NJJ
+//I have done all the coding by myself and only copied the code 
+//that my professor provided to complete my workshops and assignments.
+//**********************************************************************
+1. 
+I used 4 STL functions as below. 
+sort(): To sort the elements in ascending order. 
+replace_if(): replace every element that satisfies predicate
+any_of(): To returns true if any element within range satisfies predicate
+copy_if(): To copy all elements from range that satisfy the predicate into the range starting at o
+
+2. 
+One advantage of adopting STL algorithms is that they provide a means for removing loops, 
+reducing code logic complexity. We are not required to incorporate any details. 
+We can perform everything we want by just inserting an argument and a lambda expression.
+
+3. 
+if the client specifies an invalid field (or misspells it), 
+it will sort the crimeCollection by title(Province, Crime,Cases,Resolved) 
+
+		std::sort(m_crimeCollection.begin(), m_crimeCollection.end(), [&](const Crime& c1, const Crime& c2) {
+			if (fieldName == "Province")	return c1.m_province < c2.m_province;
+			else if (fieldName == "Crime") return c1.m_crime < c2.m_crime;
+			else if (fieldName == "Cases") return c1.m_numOfCase < c2.m_numOfCase;
+			else if (fieldName == "Resolved") return c1.m_resolved < c2.m_resolved;
+			else return c1.m_province < c2.m_province;
+			});
