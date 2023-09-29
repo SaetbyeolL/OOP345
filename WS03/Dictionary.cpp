@@ -13,7 +13,7 @@
 #include <iomanip>
 #include "Dictionary.h"
 
-using namespace std; 
+using namespace std;  
 
 namespace sdds {
 
