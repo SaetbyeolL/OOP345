@@ -1,0 +1,15 @@
+//**********************************************************************
+//Workshop : #MS3
+//Full Name : Saetbyeol Lim
+//Student ID# : 149814212
+//Email : slim62@myseneca.ca
+//Date : 11/27/2022 
+//Comment :
+//I have done all the coding by myself and only copied the code 
+//that my professor provided to complete my workshops and assignments.
+//**********************************************************************
+This project was very difficult even compared to OOP244. 
+I had to be able to understand and apply the concepts throughout the semester. 
+Sometimes it took several days to solve one function, but it was a good time to search 
+and learn on my own in the process. As always, even though I was depressed that I couldn't solve it, 
+accomplishment I felt when I solved it was great. While doing the project, I thought that I should study the STL library more.
