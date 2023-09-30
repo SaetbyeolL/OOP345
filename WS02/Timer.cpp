@@ -12,7 +12,7 @@
 #include <iostream>
 #include <iomanip>
 #include "Timer.h"
-
+ 
 namespace sdds {
 	
 	void Timer::start() {

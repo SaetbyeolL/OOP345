@@ -22,7 +22,7 @@ of the file again because we need to include all the matches contents in the fil
 At that time, is.clear() and is.seekg(0) are used. seekg() allows you to find the location of a file, 
 and seekg(0) means to read from 0th. Skip the first line, run the while statement, 
 and put the contents of all matches into an array using getline.
-
+ 
 		ifstream is(filename);
 		string temp;
 		size_t lineCount = 0;

@@ -13,7 +13,7 @@
 #include "TennisLog.h"
 #include "Timer.h"
 #include "Timer.h"
-
+ 
 void printDivider(size_t cnt) {
     for (auto i = 0u; i < cnt; ++i)
         std::cout << "*";
