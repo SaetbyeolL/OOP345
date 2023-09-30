@@ -12,7 +12,7 @@
 that the move semantic will move the elements of the resource. 
 moving inside the same disc will be quicker than copying as just the file path is changed 
 and the real data is still stored on the disc. Because it is merely performing a COPY operation, 
-copying data from one disc to another will be comparatively quicker than cutting.
+copying data from one disc to another will be comparatively quicker than cutting. 
 
 Read 'tennis-data.csv' using ifstream. When reading the first time, the number of matches in the file 
 should be counted, so the first line is excluded using getline, and the lineCount is counted 

@@ -13,7 +13,7 @@
 #define SDDS_TIMER_H
 #include <chrono>
 #include <string>
- 
+  
 const unsigned int maxNumofEvents = 10;
 
 namespace sdds {
