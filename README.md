@@ -1,6 +1,7 @@
 # OOP345
 Intensive Course for C++
 - List of C++ Assignment each week
+- Final Project: Production line order management system
 
 - WEEK01: C++ Building Blocks, Compilation and Execution
 - WEEK02: Pointers, References and Arrays, classes
